@@ -49,6 +49,16 @@ function App() {
     setTodos(newTodos);
   };
 
+  //remover uma task
+  const removeTodo = (id) => {
+    const newTodos = [...todos]
+    /* filtrar os ToDo que nao possuem o id desejado, para que sejam mantidos */
+    const filteredTodos = newTodos.filter(todo =>
+      todo.id !== id ? todo : null);
+
+    setTodos(filteredTodos);
+  }
+
   //Elemento pai - raiz da componente
   return <div className="app">
   <h1>Lista de Tarefas</h1>
@@ -57,7 +67,7 @@ function App() {
     {todos.map((todo) => (
       // Passa a prop para ter acesso aos dados
       // Declaração de chave primária
-      <Todo key={todo.id} todo={todo}/>
+      <Todo key={todo.id} todo={todo} removeTodo={removeTodo}/>
       ))}
     </div>
     <TodoForm addTodo={addTodo}/>
