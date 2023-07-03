@@ -1,0 +1,70 @@
+body{
+  font-family: Arial;
+  background-color: white;
+  padding: 30px;
+  color: #333;
+  background-image: url("https://img.freepik.com/vetores-premium/plano-de-fundo-para-a-celebracao-do-dia-das-maes_23-2150219103.jpg?w=2000");
+  background-size: cover;
+}
+
+.app{
+  max-width: 600px;
+  /* Centraliza o app */
+  margin: 0 auto;
+  background-color: aliceblue;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+h1{
+  text-align: center;
+}
+
+h2{
+  margin-bottom: 10px;
+}
+
+p{
+  margin: 10px 0;
+}
+
+/* boder-box para nao passar do limite da area delimitada */
+input {
+  box-sizing: border-box;
+}
+
+button{
+  background-color: #060e58;
+  color: aliceblue;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: .8;
+  transition: .3s;
+}
+
+/* Passa o pointer e deixa a cor mais viva */
+button:hover{
+  opacity: 1;
+}
+
+.complete{
+  background-color: rgb(52, 68, 25);
+}
+
+.remove{
+  background-color: rgb(128, 27, 27);
+}
+
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+
+input, select{
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #DDD;
+  border-radius: 3px;
+  width: 100%;
+}
